@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown Button</title> <!--Title of the Program-->
+	<style type="text/css"> /* Used for styling the font,size and color*/
+	/* Class Dropdown with relative position*/
+		.Dropdown {
+			position: relative;
+			display: inline-block;
+		}
+	/* class Drop button with some Css properties to give styling to the button*/	
+		.DropButton {
+			background-color: Darkgreen;
+			color: Black;
+			font-size: 16px;
+			border: none;
+			padding: 16px;
+			cursor: pointer;
+			
+		}
+		.Home_content {
+			background-color: White;
+			position: absolute;
+			display: none;
+			box-shadow: 0px 10px 20px 0px ;
+			width: 150px;
+			z-index: 1;
+
+		}
+		.Home_content a {
+			color: black;
+			display: block;
+			padding: 14px 16px;
+						
+		}
+	/* to view items of child class Home content in Parent class Dropdown and on taking cursor to button the hover effect will be there */	
+		.Dropdown:hover .Home_content {
+			display: block;
+			 
+		}
+		.Dropdown:hover .DropButton {
+			background-color: ForestGreen;
+		}
+	</style>
+</head>
+<body>
+	<h2> Creating Drop down button </h2> <!--This is the heading on the page-->
+	<p> Place the cursor on Home button to have dropdown menu</p>
+	<div class="Dropdown"> <!-- this is the parent div class with relative property of css -->
+		<button class="DropButton"> Home </button>
+		<div class="Home_content"> <!--This is the child div class with Absolute property of css-->
+
+		 <!--Lists containing anchor tags having links for dropdown menu -->
+			<li><a href="#circular"> Circulars</a></li>
+			<li><a href="#Academics"> Academics</a></li>
+			<li><a href="#result"> Results</a></li>
+			<li><a href="#contacts"> Contact us</a></li>
+		</div>
+	</div>
+
+</body>
+</html>
